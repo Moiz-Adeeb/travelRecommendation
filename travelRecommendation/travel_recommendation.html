@@ -38,7 +38,14 @@
 
         <div id="search">
             <!-- Search Bar goes here -->
-            <input type="search" id="searchBar" placeholder="Type Your Search Here">
+            <input type="search" id="searchBar" list="searches" placeholder="Type Your Search Here">
+            <datalist id="searches" for="searches">
+                <option value="Australia"></option>
+                <option value="Brazil"></option>
+                <option value="Japan"></option>
+                <option value="Beaches"></option>
+                <option value="Temples"></option>
+            </datalist>
             <button id="searchBtn" class="btn">Search</button>
             <button id="resetBtn" class="btn">Reset</button>
         </div>
@@ -73,11 +80,16 @@
             We encourage you go on a journey out in the world to experience the unknown, exploring the vast landscapes
             and embracing various cultures.
         </span>
-        
+
     </div>
 
     <div id="result">
-        
+        <div class="option">
+            <img src="./images/places/melbourne.jpg" alt="">
+            <h2>Sydney, Australia</h2>
+            <p>A vibrant city known for its iconic landmarks like the Sydney Opera House and Sydney Harbour Bridge.</p>
+            <button>VISIT</button>
+        </div>
     </div>
 
     <script src="travel_recommendation.js"></script>
